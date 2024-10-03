@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista dos alunos</title>
+    <style>
+        table {
+            width : 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border : 1.5px solid #000;
+            padding : 12px;
+            text-align : left;
+        }
+        caption {
+            font-size: 2.5em;
+            margin : 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <caption>Lista de alunos da turma</caption>
+            <tr>
+                <th scope = 'col' colspan = "2"> Nome </th>
+                <th scope = 'col'> Nota </th>
+                <th scope = 'col'> Media Final</th>
+                <th scope = 'col'>Classificação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan = "2">Geraldo</td>
+                <td> 1ª Nota </td>
+                <td>9.8</td>
+                <td rowspan="2">9.0</td>
+                <td rowspan="2">1º</td>
+            </tr>
+            <tr>
+                <td> 2ª Nota </td>
+                <td>9.2</td>
+            </tr>
+            <tr> 
+                <td rowspan = "2"> Hugo </td>
+                <td>1ª Nota </td>
+                <td> 7.5 </td>
+                <td rowspan="2">6.0</td>
+                <td rowspan="2">2º</td>
+            </tr>
+            <tr> 
+                <td>2ª Nota </td>
+                <td> 6.0 </td>
+            </tr>
+            <tr>
+                <td rowspan = "2"> Julio </td>
+                <td>1° nota</td>
+                <td> 5.75 </td>
+                <td rowspan = "2"> 5.375 </td>
+                <td rowspan = "2">3°</td>
+            </tr>
+            <tr>
+                <td>2ª Nota </td>
+                <td> 5.0 </td>
+            </tr>
+            <tr>
+                <td colspan="2">Joaran</td>
+                <td>4.0</td>
+                <td>4.0</td>
+                <td>4º</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
